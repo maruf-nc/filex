@@ -1,0 +1,78 @@
+<div id="app" class="reader-app">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <h3>
+                    File Listing
+                    <a href="#/new" class="btn btn-primary pull-right">Add New File</a>
+                </h3>
+
+                <form class="form-search">
+                    <div class="input-append">
+                        <input type="text" class="span2 search-query">
+                        <button type="submit" class="btn">Search</button>
+                    </div>
+                </form>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>
+                            #
+                        </th>
+                        <th>
+                            Title
+                        </th>
+                        <th>
+                            Payment Taken
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="post in posts">
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            <a href="#/edit/{{ post._id }}">{{ post.title }}</a>
+                        </td>
+                        <td>
+                            01/04/2012
+                        </td>
+                        <td>
+                            Default
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="pagination pagination-centered">
+                    <ul>
+                        <li>
+                            <a href="#">Prev</a>
+                        </li>
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
